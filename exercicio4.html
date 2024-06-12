@@ -1,0 +1,29 @@
+<script>
+
+//Faça um programa que leia 5 números e informe o maior número.
+
+    // Cria um array para armazenar os números
+let numeros = [];
+
+// Solicita ao usuário que insira os 5 números e os armazena no array
+for (let i = 0; i < 5; i++) {
+    numeros.push(parseFloat(prompt("Digite o número " + (i + 1) + ":")));
+}
+
+// Encontra o maior número no array
+let maiorNumero = numeros[0]; // Assume que o primeiro número é o maior inicialmente
+for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maiorNumero) {
+        maiorNumero = numeros[i];
+    }
+}
+
+// Exibe o maior número encontrado
+alert("O maior número é: " + maiorNumero);
+
+
+
+
+
+
+</script>

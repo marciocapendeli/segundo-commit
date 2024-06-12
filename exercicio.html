@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notas</title>
+</head>
+<body>
+    <h1> solicita notas</h1>
+
+    <p>digite uma nota entre zero e dez. </p>
+
+
+    <script>
+
+
+
+nota = prompt("Digite sua nota entre 0 e 10");
+nota = Number(nota);
+
+while (nota < 0 || nota > 10 || isNaN(nota)) {
+    nota = prompt("Nota inválida. Digite sua nota entre 0 e 10:");
+    nota = Number(nota);
+}
+
+document.write("Valor válido: " + nota);
+
+
+//ou
+
+/*let nota = prompt("Digite sua nota entre 0 e 10");
+nota = Number(nota);
+
+if (nota >= 0 && nota <= 10) {
+    document.write("Valor válido: " + nota);
+} else {
+    document.write("Nota inválida.");
+}*/
+
+</script>
+</body>
+</html>
+
+
+
